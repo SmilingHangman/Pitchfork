@@ -53,7 +53,7 @@ main {
     position: relative;
 }
 
-img {
+.cover {
     position: absolute;
     z-index: -1;
     margin: 0;
@@ -83,7 +83,8 @@ form {
 }
 
 input {
-    width: 250px;
+    box-sizing: border-box;
+    width: 100%;
     margin: 10px;
     border: none;
     border-radius: 10px;
@@ -95,7 +96,7 @@ input {
 }
 
 .signup {
-    width: 292px;
+    width: 100%;
     margin: 10px;
     border: none;
     border-radius: 10px;
@@ -107,6 +108,93 @@ input {
     padding: 20px;
 }
 
+.container1 {
+    margin: 0;
+    padding-top: 50px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    min-width: 310px;
+    max-width: 1100px;
+    height: auto;
+    background-color: #f8f9fa;
+}
+@media screen and (min-width: 930px) {
+    .container1 {
+        flex-direction: row;
+        justify-content: center;
+    }
+}
+
+.feature1 {
+    padding-top: 35px;
+    padding-bottom: 15px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #007bff;
+}
+@media screen and (min-width: 930px) {
+    .feature1 {
+        max-width: 310px;
+    }
+}
+
+h3 {
+    margin: 0;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: black;
+    font-size: 40px;
+    text-align: center;
+}
+
+p {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #686a6b;
+    font-size: 28px;
+    text-align: center;
+}
+
+.container2 {
+    margin: 0;
+    display: flex;
+    /*justify-content: center;*/
+    align-items: center;
+    flex-direction: column;
+    width: 95%;
+    min-width: 310px;
+    max-width: 1100px;
+    height: auto;
+    background-color: #f8f9fa;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+
+.feature2 {
+    margin: 0;
+    width: 100%;
+    min-width: 310px;
+    max-width: 1100px;
+    height: 600px;
+    object-fit: cover;
+    object-position: -20px;
+    /*text-align: left;*/
+    border: 1px solid blue;
+}
+
+.h3palign {
+    text-align: left;
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
 
 
 /*$red: #ff3535;*/
