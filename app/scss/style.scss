@@ -40,7 +40,7 @@ h1 {
     padding: 20px;
 }
 
-main {
+main, .get_started {
     margin: 0;
     display: flex;
     justify-content: center;
@@ -51,6 +51,10 @@ main {
     max-width: 1100px;
     height: 750px;
     position: relative;
+}
+
+.get_started {
+    height: 550px;
 }
 
 .cover {
