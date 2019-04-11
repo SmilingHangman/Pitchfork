@@ -1,12 +1,9 @@
 body {
     margin: 0;
-    /*margin: 10px;
-    margin-top: 20px;*/
     font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
-    /*background-color: #24247a;*/
 }
 
 header {
@@ -15,7 +12,6 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    /*width: 95%;*/
     width: 100%;
     min-width: 310px;
     max-width: 1100px;
@@ -87,6 +83,13 @@ form {
     margin: 10px;
     background: none;
 }
+@media screen and (min-width: 884px) {
+    form {
+        flex-direction: row;
+        justify-content: center;
+        max-width: 88%;
+    }
+}
 
 input {
     box-sizing: border-box;
@@ -99,6 +102,11 @@ input {
     font: inherit;
     font-size: 28px;
     padding: 20px;
+}
+@media screen and (min-width: 884px) {
+    input {
+        width: 75%;
+    }
 }
 
 .signup {
@@ -113,6 +121,11 @@ input {
     color: white;
     padding: 20px;
 }
+@media screen and (min-width: 884px) {
+    .signup {
+        width: 25%;
+    }
+}
 
 .container1 {
     margin: 0;
@@ -126,7 +139,7 @@ input {
     height: auto;
     background-color: #f8f9fa;
 }
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 884px) {
     .container1 {
         flex-direction: row;
         justify-content: center;
@@ -144,9 +157,9 @@ input {
     flex-direction: column;
     color: #007bff;
 }
-@media screen and (min-width: 930px) {
+@media screen and (min-width: 884px) {
     .feature1 {
-        max-width: 310px;
+        max-width: 30%;
     }
 }
 
@@ -171,7 +184,6 @@ p {
 .container2 {
     margin: 0;
     display: flex;
-    /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
     width: 100%;
@@ -180,6 +192,30 @@ p {
     height: auto;
     background-color: white;
     box-sizing: border-box;
+}
+@media screen and (min-width: 884px) {
+    .container2 {
+        flex-direction: row;
+        flex-wrap: wrap; 
+    }
+    #o1 {
+        order: 2;
+    }
+    #o2 {
+        order: 1;
+    }
+    #o3 {
+        order: 3;
+    }
+    #o4 {
+        order: 4;
+    }
+    #o5 {
+        order: 6;
+    }
+    #o6 {
+        order: 5;
+    }
 }
 
 .feature2 {
@@ -193,6 +229,13 @@ p {
     height: 600px;
     object-fit: cover;
     object-position: -30px;
+}
+@media screen and (min-width: 884px) {
+    .feature2 {
+        width: 50%;
+        height: 440px;
+        object-position: 0px;
+    }
 }
 
 .h3palign {
@@ -215,12 +258,32 @@ p {
     height: auto;
 }
 
+.people_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media screen and (min-width: 884px) {
+    .people_wrapper {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+
 .testim {
     margin: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
+}
+@media screen and (min-width: 884px) {
+    .testim {
+        max-width: 30%;
+    }
 }
 
 .testimg {
@@ -230,9 +293,15 @@ p {
     border-radius: 50%;
     box-shadow: 0px 10px 6px rgba(179,187,194,1);
     object-fit: cover;
-    width: 60%;
-    min-width: 310px;
-    max-width: 1100px;
+    width: 50%;
+    min-width: 280px;
+    max-width: 340px;
+}
+@media screen and (min-width: 884px) {
+    .testimg {
+        min-width: 200px;
+        max-width: 600px;
+    }
 }
 
 h4 {
@@ -253,6 +322,12 @@ footer {
     max-width: 1100px;
     height: auto;
 }
+@media screen and (min-width: 884px) {
+    footer {
+        flex-direction: row;
+        justify-content: space-between;  
+    }
+}
 
 .links1 {
     text-align: center;
@@ -267,6 +342,11 @@ a {
     line-height: 50px;
     font-weight: 700;
 }
+@media screen and (min-width: 884px) {
+    a:first-of-type {
+        margin-left: 10px; 
+    }
+}
 
 span {
     font-size: 10px;
@@ -278,6 +358,11 @@ span {
 .copyr {
     font-size: 22px;
 }
+@media screen and (min-width: 884px) {
+    .copyr {
+        text-align: left;
+    }
+}
 
 .links2 {
     width: 50%;
@@ -285,4 +370,9 @@ span {
     display: flex;
     justify-content: space-between;
 }
-/*$red: #ff3535;*/
+@media screen and (min-width: 884px) {
+    .links2 {
+        width: 30%;
+        justify-content: space-evenly; 
+    }
+}
