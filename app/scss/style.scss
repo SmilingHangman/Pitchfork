@@ -172,29 +172,68 @@ p {
     min-width: 310px;
     max-width: 1100px;
     height: auto;
-    background-color: #f8f9fa;
-    border: 1px solid red;
+    background-color: white;
+    /*border: 1px solid red;*/
     box-sizing: border-box;
 }
 
 .feature2 {
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 100%;
     min-width: 310px;
     max-width: 1100px;
     height: 600px;
     object-fit: cover;
-    object-position: -20px;
-    /*text-align: left;*/
-    border: 1px solid blue;
+    object-position: -30px;
+    /*border: 1px solid blue;*/
 }
 
 .h3palign {
     text-align: left;
-    padding-top: 40px;
     padding-left: 20px;
     padding-right: 20px;
 }
 
+.people_container {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 95%;
+    min-width: 310px;
+    max-width: 1100px;
+    height: auto;
+}
+
+.testim {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.testimg {
+    margin: 0;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    border-radius: 50%;
+    box-shadow: 0px 10px 6px rgba(179,187,194,1);
+    object-fit: cover;
+    width: 60%;
+    min-width: 310px;
+    max-width: 1100px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 28px;
+}
 
 /*$red: #ff3535;*/
