@@ -1,11 +1,12 @@
 body {
-    margin: 10px;
-    margin-top: 20px;
+    margin: 0;
+    /*margin: 10px;
+    margin-top: 20px;*/
     font-family: 'Lato', sans-serif;
     display: flex;
     align-items: center;
     flex-direction: column;
-    background-color: #24247a;
+    /*background-color: #24247a;*/
 }
 
 header {
@@ -14,7 +15,8 @@ header {
     justify-content: space-between;
     align-items: center;
     height: 100px;
-    width: 95%;
+    /*width: 95%;*/
+    width: 100%;
     min-width: 310px;
     max-width: 1100px;
     background-color: #f8f9fa;
@@ -46,7 +48,7 @@ main, .get_started {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     min-width: 310px;
     max-width: 1100px;
     height: 750px;
@@ -118,7 +120,7 @@ input {
     display: flex;
     align-items: center;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     min-width: 310px;
     max-width: 1100px;
     height: auto;
@@ -172,12 +174,11 @@ p {
     /*justify-content: center;*/
     align-items: center;
     flex-direction: column;
-    width: 95%;
+    width: 100%;
     min-width: 310px;
     max-width: 1100px;
     height: auto;
     background-color: white;
-    /*border: 1px solid red;*/
     box-sizing: border-box;
 }
 
@@ -192,7 +193,6 @@ p {
     height: 600px;
     object-fit: cover;
     object-position: -30px;
-    /*border: 1px solid blue;*/
 }
 
 .h3palign {
@@ -209,7 +209,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 95%;
+    width: 100%;
     min-width: 310px;
     max-width: 1100px;
     height: auto;
@@ -240,4 +240,49 @@ h4 {
     font-size: 28px;
 }
 
+footer {
+    background-color: #f8f9fa;
+    margin: 0;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    min-width: 310px;
+    max-width: 1100px;
+    height: auto;
+}
+
+.links1 {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    font-size: 22px;
+    line-height: 50px;
+    font-weight: 700;
+}
+
+span {
+    font-size: 10px;
+    vertical-align: 50%;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.copyr {
+    font-size: 22px;
+}
+
+.links2 {
+    width: 50%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+}
 /*$red: #ff3535;*/
